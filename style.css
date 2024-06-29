@@ -1,0 +1,320 @@
+:root {
+    --dm-sans: "DM Sans", sans-serif;
+    --latin: "Dancing Script", cursive;
+    --latin--2:"Sacramento", cursive;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: transparent;
+    position: relative;
+}
+
+.header p {
+    margin-right: 4%;
+    color: black;
+    font-size: 1.6rem;
+    font-family: var(--latin);
+}
+
+.header .a-header {
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+    font-family: var(--dm-sans);
+    margin: 2%;
+    text-shadow: .2px .2px 5px black;
+    position: relative;
+}
+
+.header .a-header::before {
+    content: '';
+    width: 100%;
+    height: 1.7px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    transition: .6s;
+    transform: scale(0);
+}
+
+.header .a-header:hover::before {
+    transform: scale(1);
+}
+
+.header img {
+    width: 1.7%;
+    cursor: pointer;
+}
+
+
+/* section 1 */
+.section-1 {
+    background-image: url('foto-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 125vh;
+    margin-top: -13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5%;
+    overflow: hidden;
+}
+
+.section-1 .h1-section-1 {
+    color: white;
+    font-family: var(--latin--2);
+    font-size: 4.5rem;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-shadow: 1px 5px 5px black;
+}
+
+.section-1 .h3-section-1 {
+    color: white;
+    font-family: var(--dm-sans);
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    text-shadow: 1px 1px 5px black;
+}
+
+.section-1 .h3-section-1::before {
+    content: '';
+    width: 100%;
+    height: 1.2px;
+    background-color: white;
+    bottom: 0;
+    position: absolute;
+}
+
+.section-1 img {
+    width: 30%;
+}
+
+.section-1 .bunga-bawah {
+    margin-top: -3%;
+}
+
+/* section 2 */
+.section-2 {
+    width: 100%;
+    height: 120vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.section-2 .content-section-2 {
+    width: 75%;
+    height: 30%;
+    background-color: white;
+    z-index: 2;
+    margin-top: -4%;
+    border-top: 3px solid rgb(255, 132, 9);
+    position: relative;
+    /* box-shadow: -10px 0 15px -5px rgba(0,0,0,0.5), 10px 0 15px -5px rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-2 .content-section-2::before {
+    content: '';
+    width: 15%;
+    height: .8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: rotate(90deg);
+    left: -7.5%;
+    bottom: 63.5%;
+}
+
+.section-2 .content-section-2::after {
+    content: '';
+    width: 15%;
+    height: .8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transform: rotate(90deg);
+    right: -7.5%;
+    bottom: 63.5%;
+}
+
+/* content section 2 */
+.section-2 .container-title-section-2 {
+    margin-top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .container-title-section-2 h3 {
+    font-family: var(--latin);
+    font-size: 2rem;
+    position: relative;
+    font-style: italic;
+    color: rgb(119, 129, 92);
+}
+
+.section-2 .container-title-section-2 h3::before {
+    content: 'wwwwwwwwwwwwwwwwwwwwwwwwwwww';
+    width: 300%;
+    position: absolute;
+    left: -300%;
+    bottom: 20%;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.section-2 .container-title-section-2 h3::after {
+    content: 'wwwwwwwwwwwwwwwwwwwwwwwwwww';
+    width: 300%;
+    position: absolute;
+    right: -320%;
+    bottom: 20%;
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.section-2 .container-bingkai-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.section-2 .container-bingkai-section-2 .bingkai-1 img {
+    width: 70%;
+    position: relative;
+    z-index: 3;
+}
+
+.section-2 .container-bingkai-section-2 .bingkai-1 .foto-bingkai-1 {
+    background-image: url('asya-2.jpg');
+    background-position: 40%;
+    background-size: cover;
+    border-radius: 50%;
+    width: 54%;
+    height: 54%;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+}
+
+.section-2 .container-bingkai-section-2 .bingkai-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .container-bingkai-section-2 .bingkai-2 img {
+    width: 70%;
+    position: relative;
+    z-index: 3;
+}
+
+.section-2 .container-bingkai-section-2 .bingkai-2 .foto-bingkai-2 {
+    background-image: url('iam-2.jpg');
+    background-position: 40%;
+    background-size: cover;
+    border-radius: 50%;
+    width: 54%;
+    height: 54%;
+    position: absolute;
+    z-index: 1;
+}
+
+.section-2 .container-bingkai-section-2 .bingkai-2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.section-2 .container-bingkai-section-2 img{
+    width: 8%;
+    transform: rotate(-20deg);
+}
+
+.container-text-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4%;
+    margin-right: 6%;
+    gap: 10%;
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+.container-text-section-2 .text-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+
+
+.container-text-section-2 .text-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    
+}
+
+.container-text-section-2 .text-2 h3,
+.container-text-section-2 .text-1 h3 {
+    font-family: var(--latin);
+    font-size: 2rem;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: rgb(119, 129, 92);
+}
+
+.container-text-section-2 .text-2 p,
+.container-text-section-2 .text-1 p {
+    text-align: center;
+    font-family: var(--latin);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 10%;
+}
+
+.content-section-2 .a-section-2 {
+    color: #fffbe7;
+    margin-top: 4%;
+    padding: 1.3%;
+    border-radius: 100px;
+    font-family: var(--dm-sans);
+    font-size: .8rem;
+    background-color: rgb(119, 129, 92);
+}
