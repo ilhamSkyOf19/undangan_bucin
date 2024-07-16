@@ -385,7 +385,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
 }
 /* a */
 .section-3 .container-a {
@@ -415,24 +414,9 @@ body {
     background-image: url('gallery-1.jpg');
     background-position: center;
     background-size: cover;
-    border: 2px solid white;
-    transition: .3s;
+    border: inset 2px solid white;
     position: relative;
-}
-
-.section-3 .container-a .div-1-a .div-1-a-vol-1::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    z-index: 1;
-    transition: .3s;
-}
-.section-3 .container-a .div-1-a .div-1-a-vol-1:hover::before {
-    cursor: pointer;
-    opacity: .5;
+    border-right: 2px solid white;
 }
 
 /* div a 1 vol 2 */
@@ -442,6 +426,7 @@ body {
     background-image: url('gallery-7.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 /* div a 2*/
@@ -452,6 +437,7 @@ body {
     background-position: center;
     background-size: cover;
     border: 2px solid white;
+    position: relative;
 }
 /* div a 3*/
 .section-3 .container-a .div-3-a {
@@ -471,6 +457,7 @@ body {
     background-size: cover;
     border-bottom: 2px solid white;
     border-right: 2px solid white;
+    position: relative;
 }
 
 /* div a 3 vol 2 */
@@ -480,6 +467,7 @@ body {
     background-image: url('gallery-2.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 /* b */
@@ -491,29 +479,34 @@ body {
 /* div 1 */
 .section-3 .container-b .div-1-b {
     width: 100%;
-    height: 66.3%;
+    height: 66.8%;
     background-image: url('gallery-6.jpg');
     background-position: center;
     background-size: cover;
-    border: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    position: relative;
 }
 
 /* div 2 b */
 .section-3 .container-b .div-2-b {
     width: 100%;
     height: 32.3%;
-    border: 2px solid white;
-    border-bottom: 3px solid white;
     border-top: none;
     background-image: url('mawar-cream.jpg');
     background-position: center;
     background-size: cover;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    position: relative;
 }
 
 /* c */
 .section-3 .container-c {
     width: 25%;
-    height: 100%
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 
@@ -525,15 +518,18 @@ body {
     background-position: center;
     background-size: cover;
     border: 2px solid white;
+    border-bottom: none;
+    position: relative;
 }
 
 /* div 2 c */
 .section-3 .container-c .div-2-c {
     width: 100%;
-    height: 32.5%;
+    height: 32.7%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
 }
 
 /* div 2 c vol 1 */
@@ -543,8 +539,8 @@ body {
     background-image: url('gallery-10.jpg');
     background-position: center;
     background-size: cover;
-    border: 2px solid white;
-    border-right: none;
+    border-right: 2px solid white;
+    position: relative;
 }
 
 /* div 2 c vol 2 */
@@ -554,8 +550,7 @@ body {
     background-image: url('gallery-8.jpg');
     background-position: center;
     background-size: cover;
-    border: 2px solid white;
-    border-right: none;
+    position: relative;
 }
 
 /* div 3 c */
@@ -566,8 +561,8 @@ body {
     background-image: url('iam-2.jpg');
     background-position: center;
     background-size: cover;
-    border: 2px solid white;
-    border: 3px solid white;
+    position: relative;
+    border-left: 2px solid white;
 }
 /* d */
 .section-3 .container-d {
@@ -577,16 +572,19 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
 .section-3 .container-d .div-1-d {
     width: 98.7%;
     height: 33.3%;
     border: 2px solid white;
+    border-left: none;
     border-bottom: none;
     background-image: url('asya.jpg');
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .section-3 .container-d .div-2-d {
@@ -597,10 +595,244 @@ body {
     background-size: cover;
     border: 2px solid white;
     border-bottom: 3px solid white;
+    position: relative;
+}
+
+.section-3 .container-d .div-2-d::before,
+.section-3 .container-d .div-1-d::before,
+.section-3 .container-c .div-3-c::before,
+.section-3 .container-c .div-2-c .div-2-c-vol-2::before,
+.section-3 .container-c .div-2-c .div-2-c-vol-1::before,
+.section-3 .container-c .div-1-c::before,
+.section-3 .container-b .div-2-b::before,
+.section-3 .container-b .div-1-b::before,
+.section-3 .container-a .div-3-a .div-3-a-vol-2::before,
+.section-3 .container-a .div-3-a .div-3-a-vol-1::before,
+.section-3 .container-a .div-2-a::before,
+.section-3 .container-a .div-1-a .div-1-a-vol-2::before,
+.section-3 .container-a .div-1-a .div-1-a-vol-1::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: 1;
+    transition: .3s;
+}
+
+.section-3 .container-d .div-2-d:hover::before,
+.section-3 .container-d .div-1-d:hover::before,
+.section-3 .container-c .div-3-c:hover::before,
+.section-3 .container-c .div-2-c .div-2-c-vol-2:hover::before,
+.section-3 .container-c .div-2-c .div-2-c-vol-1:hover::before,
+.section-3 .container-c .div-1-c:hover::before,
+.section-3 .container-b .div-2-b:hover::before,
+.section-3 .container-b .div-1-b:hover::before,
+.section-3 .container-a .div-3-a .div-3-a-vol-2:hover::before,
+.section-3 .container-a .div-3-a .div-3-a-vol-1:hover::before,
+.section-3 .container-a .div-2-a:hover::before,
+.section-3 .container-a .div-1-a .div-1-a-vol-2:hover::before,
+.section-3 .container-a .div-1-a .div-1-a-vol-1:hover::before {
+    cursor: pointer;
+    opacity: 1;
 }
 
 /* section 4 */
 .section-4 {
     width: 100%;
-    height: 100vh;
+    height: 180vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-4 .content-3-section-4,
+.section-4 .content-1-section-4 {
+    width: 20%;
+    height: auto;
+}
+
+.section-4 .content-3-section-4 .container-img-1,
+.section-4 .content-1-section-4 .container-img-1 {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.section-4 .content-3-section-4 .container-img-1 img,
+.section-4 .content-1-section-4 .container-img-1 img {
+    width: 80%;
+    margin-top: -40%;
+    margin-bottom: 23%;
+}
+
+
+.section-4 .content-1-section-4 .container-img-2 img {
+    width: 80%;
+    margin-left: -10%;
+    transform: rotate(-10deg);
+}
+
+
+.section-4 .content-1-section-4 .container-img-3 img {
+    width: 70%;
+    margin-left: -10%;
+    margin-top: -30%;
+    transform: rotate(20deg);
+}
+
+.section-4 .content-1-section-4 .container-img-4 img {
+    width: 70%;
+    margin-left: -40%;
+    margin-top: -40%;
+    transform: rotate(20deg);
+}
+
+.section-4 .content-1-section-4 .container-img-5 img {
+    width: 70%;
+    margin-left: -25%;
+    margin-top: 20%;
+}
+
+.section-4 .content-1-section-4 .container-img-6 img {
+    width: 70%;
+    margin-left: -40%;
+    margin-top: -40%;
+    transform: rotate(20deg);
+}
+
+.section-4 .content-1-section-4 .container-img-7 img {
+    width: 70%;
+    margin-left: -15%;
+    margin-bottom: -90%;
+    transform: rotate(30deg);
+}
+
+.section-4 .content-1-section-4 .container-img-8 {
+    width: 80%;
+    height: 260px;
+    padding-left: 6%;
+    padding-top: 5%;
+    border-radius: 2%;
+    margin-left: 50%;
+    margin-top: -40%;
+    transform: rotate(-20deg);
+    position: relative;
+    z-index: 2;
+}
+
+.section-4 .content-1-section-4 .container-img-8::before {
+    content: "";
+    width: 70%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 4%;
+    border-radius: 2%;
+    transform: rotate(-10deg);
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.4);
+}
+
+.section-4 .content-1-section-4 .container-img-8::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 2%;
+}
+
+
+.section-4 .content-1-section-4 .container-img-8 .img-container-img-8 {
+    width: 95%;
+    height: 70%;
+    border-radius: 2%;
+    background-image: url('gallery-10.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+
+
+/* content 3 */
+.section-4 .content-3-section-4 .container-img-1 img {
+    margin-bottom: 50%;
+    margin-left: 20%;
+}
+
+.section-4 .content-3-section-4 .container-img-2 {
+    width: 70%;
+    height: 230px;
+    padding-left: 6%;
+    padding-top: 5%;
+    border-radius: 2%;
+    margin-left: 35%;
+    margin-top: -40%;
+    transform: rotate(20deg);
+    position: relative;
+    z-index: 2;
+}
+
+.section-4 .content-3-section-4 .container-img-2::before {
+    content: "";
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 5%;
+    top: 4%;
+    border-radius: 2%;
+    transform: rotate(5deg);
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.4);
+}
+
+.section-4 .content-3-section-4 .container-img-2::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 2%;
+}
+
+
+.section-4 .content-3-section-4 .container-img-2 .img-container-img-2 {
+    width: 95%;
+    height: 70%;
+    border-radius: 2%;
+    background-image: url('gallery-10.jpg');
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+    position: relative;
+}
+
+.section-4 .content-3-section-4 .container-img-3 img {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+.section-4 .content-3-section-4 .container-img-4 img {
+    width: 60%;
+    margin-top: -20%;
+    margin-left: 60%;
+    transform: rotate(-30deg);
+}
+
+.section-4 .content-3-section-4 .container-img-5 img {
+    width: 80%;
+    margin-top: -10%;
+    margin-left: 40%;
+    transform: rotate(0deg);
 }
