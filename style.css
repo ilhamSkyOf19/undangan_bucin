@@ -1576,10 +1576,42 @@ body {
     width: 100%;
     height: 40%;
     background-color: rebeccapurple;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
+
+.section-6 .content-2-section-6 .baris-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-6 .content-2-section-6 .baris-1 .img-1,
+.section-6 .content-2-section-6 .baris-1 .img-2,
+.section-6 .content-2-section-6 .baris-1 .img-3,
+.section-6 .content-2-section-6 .baris-1 .img-4,
+.section-6 .content-2-section-6 .baris-1 .img-5,
+.section-6 .content-2-section-6 .baris-1 .img-6,
+.section-6 .content-2-section-6 .baris-1 .img-7,
+.section-6 .content-2-section-6 .baris-1 .img-9,
+.section-6 .content-2-section-6 .baris-1 .img-10,
+.section-6 .content-2-section-6 .baris-1 .img-11,
+.section-6 .content-2-section-6 .baris-1 .img-12,
+.section-6 .content-2-section-6 .baris-1 .img-13,
+.section-6 .content-2-section-6 .baris-1 .img-14,
+.section-6 .content-2-section-6 .baris-1 .img-15, 
+.section-6 .content-2-section-6 .baris-1 .img-16 {
+    width: 10%;
+    height: 10px;
+    background-color: black;
+}
+
+
 
 .section-6 .content-3-section-6 {
     width: 100%;
     height: 40%;
     background-color: blue;
 }
+
