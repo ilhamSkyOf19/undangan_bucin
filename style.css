@@ -1494,13 +1494,14 @@ body {
 /* section 6 */
 .section-6 {
     width: 100%;
-    height: 90vh;
+    height: 95vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: -2.5%;
+    overflow: hidden;
 }
 
 .section-6 .content-1-section-6  {
@@ -1732,6 +1733,60 @@ body {
 .section-6 .content-2-section-6  .img-48 {
     background-image: url('person-9.jpg');
 }
+/* bayangan */
+.section-6 .content-2-section-6  .img-1,
+.section-6 .content-2-section-6  .img-2,
+.section-6 .content-2-section-6  .img-3,
+.section-6 .content-2-section-6  .img-4,
+.section-6 .content-2-section-6  .img-5,
+.section-6 .content-2-section-6  .img-6,
+.section-6 .content-2-section-6  .img-7,
+.section-6 .content-2-section-6  .img-8,
+.section-6 .content-2-section-6  .img-9,
+.section-6 .content-2-section-6  .img-10,
+.section-6 .content-2-section-6  .img-11,
+.section-6 .content-2-section-6  .img-12,
+.section-6 .content-2-section-6  .img-13,
+.section-6 .content-2-section-6  .img-14,
+.section-6 .content-2-section-6  .img-15,
+.section-6 .content-2-section-6  .img-16,
+.section-6 .content-2-section-6  .img-17,
+.section-6 .content-2-section-6  .img-18,
+.section-6 .content-2-section-6  .img-19,
+.section-6 .content-2-section-6  .img-20,
+.section-6 .content-2-section-6  .img-21,
+.section-6 .content-2-section-6  .img-22,
+.section-6 .content-2-section-6  .img-23,
+.section-6 .content-2-section-6  .img-24,
+.section-6 .content-2-section-6  .img-25,
+.section-6 .content-2-section-6  .img-26,
+.section-6 .content-2-section-6  .img-27,
+.section-6 .content-2-section-6  .img-28,
+.section-6 .content-2-section-6  .img-29,
+.section-6 .content-2-section-6  .img-30,
+.section-6 .content-2-section-6  .img-31,
+.section-6 .content-2-section-6  .img-32,
+.section-6 .content-2-section-6  .img-33,
+.section-6 .content-2-section-6  .img-34,
+.section-6 .content-2-section-6  .img-35,
+.section-6 .content-2-section-6  .img-36,
+.section-6 .content-2-section-6  .img-37,
+.section-6 .content-2-section-6  .img-38,
+.section-6 .content-2-section-6  .img-39,
+.section-6 .content-2-section-6  .img-40,
+.section-6 .content-2-section-6  .img-41,
+.section-6 .content-2-section-6  .img-42,
+.section-6 .content-2-section-6  .img-43,
+.section-6 .content-2-section-6  .img-44,
+.section-6 .content-2-section-6  .img-45,
+.section-6 .content-2-section-6  .img-46,
+.section-6 .content-2-section-6  .img-47,
+.section-6 .content-2-section-6  .img-48 {
+    box-shadow: inset 5px 5px 20px rgba(0, 0, 0, 0.3),
+                inset -5px -5px 20px rgba(0, 0, 0, 0.3),
+                inset 5px -5px 20px rgba(0, 0, 0, 0.3),
+                inset -5px 5px 20px rgba(0, 0, 0, 0.3);
+}
 
 .section-6 .content-2-section-6 .img-1,
 .section-6 .content-2-section-6 .img-16,
@@ -1756,7 +1811,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 132, 9, 0.7);
+    background-color: rgba(255, 132, 9, 0.6);
     fill: none;
 }
 
@@ -1778,7 +1833,134 @@ body {
 
 .section-6 .content-3-section-6 {
     width: 100%;
-    height: 40%;
-    background-color: blue;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.section-6 .content-3-section-6 .vol-2 {
+    margin-right: -100%;
+    background-color: green;
+    transition: .3s;
+}
+
+.section-6 .content-3-section-6 .vol-1 {
+    margin-left: -100%;
+    background-color: rgb(171, 170, 170);
+    transition: .3s;
+}
+
+.section-6 .content-3-section-6 .vol-2.vol-active {
+    margin-right: 0%;
+}
+
+.section-6 .content-3-section-6 .vol-1.vol-active {
+    margin-left: 0%;
+}
+
+.section-6 .content-3-section-6 .vol-2,
+.section-6 .content-3-section-6 .vol-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* prev */
+.section-6 .content-3-section-6 .prev {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+
+.section-6 .content-3-section-6 .prev svg {
+    width: 5%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* next */
+.section-6 .content-3-section-6 .next {
+    position: absolute;
+    right: 0%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    z-index: 3;
+}
+
+.section-6 .content-3-section-6 .next svg {
+    width: 5%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.section-6 .content-3-section-6 .vol-2 .h-1-content-3-section-6,
+.section-6 .content-3-section-6 .vol-1 .h-1-content-3-section-6 {
+    color: white;
+    font-size: 5rem;
+    font-family: var(--lato);
+    transform: rotate(180deg);
+    z-index: 1;
+    margin-top: -5%;
+    
+}
+
+.section-6 .content-3-section-6 .vol-2 .a-1-content-3-section-6,
+.section-6 .content-3-section-6 .vol-1 .a-1-content-3-section-6 {
+    z-index: 2;
+    color: rebeccapurple;
+    font-family: var(--popins);
+    font-size: .8rem;
+    position: relative;
+    margin-bottom: 1%;
+    margin-top: -4%;
+}
+
+.section-6 .content-3-section-6 .vol-2 .a-1-content-3-section-6::before,
+.section-6 .content-3-section-6 .vol-1 .a-1-content-3-section-6::before {
+    content: '@';
+    position: absolute;
+    color: black;
+    left: -40%;
+    font-size: .8rem;
+    top: -5%;
+}
+
+.section-6 .content-3-section-6 .vol-2 .p-1-content-3-section-6,
+.section-6 .content-3-section-6 .vol-1 .p-1-content-3-section-6 {
+    width: 70%;
+    text-align: center;
+    line-height: 130%;
+    margin-bottom: .5%;
+    font-size: .8rem;
+    font-family: var(--popins);
+}
+
+.section-6 .content-3-section-6 .vol-2 .a-2-content-3-section-6,
+.section-6 .content-3-section-6 .vol-1 .a-2-content-3-section-6 {
+    font-size: .8rem;
+    margin-bottom: .3%;
+    font-family: var(--popins);
+}
+
+.section-6 .content-3-section-6 .vol-2 .a-3-content-3-section-6,
+.section-6 .content-3-section-6 .vol-1 .a-3-content-3-section-6 {
+    font-size: .8rem;
+    margin-bottom: .5%;
+    font-family: var(--popins);
+}
+
+.section-6 .content-3-section-6 .vol-2 .p-2-content-3-section-6,
+.section-6 .content-3-section-6 .vol-1 .p-2-content-3-section-6 {
+    font-size: .8rem;
+    font-family: var(--popins);
+    font-weight: bold;
 }
 
