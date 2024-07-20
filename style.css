@@ -2076,3 +2076,147 @@ body {
     font-weight: bold;
 }
 
+/* section 7 */
+.section-7 {
+    width: 100%;
+    height: 140vh;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* bingkai luar */
+.section-7 .content-1-section-7 {
+    width: 40rem;
+    height: 40rem;
+    background-image: url("bingkai-3.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+}
+/* bingkai dalam */
+.section-7 .content-1-section-7 .bingkai {
+    width: 27rem;
+    height: 27rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    border: solid 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-7 .content-1-section-7 .bingkai::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("bingkai-4.png");
+    background-position: center;
+    background-size: 33rem;
+    transform: rotate(90deg);
+    opacity: .3;
+    z-index: 1;
+}
+
+.section-7 .content-1-section-7 .bingkai .h2-1-bingkai {
+    font-size: .9rem;
+    font-family: var(--popins);
+    z-index: 2;
+}
+
+.section-7 .content-1-section-7 .bingkai .p-1-bingkai {
+    font-size: .8rem;
+    font-family: var(--latin);
+    font-style: italic;
+    margin-top: 1%;
+    z-index: 2;
+}
+
+.section-7 .content-1-section-7 .bingkai .nama-bingkai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    z-index: 2;
+}
+
+.section-7 .content-1-section-7 .bingkai .nama-bingkai::before {
+    content: " ";
+    position: absolute;
+    width: 145%;
+    height: 1.2px;
+    background-color: black;
+    top: -35%;
+    opacity: .4;
+}
+
+.section-7 .content-1-section-7 .bingkai .nama-bingkai::after {
+    content: " ";
+    position: absolute;
+    width: 145%;
+    height: 1.2px;
+    background-color: black;
+    bottom: -35%;
+    opacity: .4;
+}
+
+.section-7 .content-1-section-7 .bingkai .nama-bingkai .nama-1 {
+    font-family: var(--latin);
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 5px;
+    z-index: 2;
+}
+
+.section-7 .content-1-section-7 .bingkai .nama-bingkai .dan-bingkai {
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 9px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    font-family: var(--lato);
+    font-style: italic;
+    font-weight: 300;
+    z-index: 2;
+}
+
+.section-7 .content-1-section-7 .bingkai .nama-bingkai .nama-2 {
+    font-family: var(--latin);
+    font-size: 2rem;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+/* input */
+
+.section-7 .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai {
+    z-index: 2;
+    position: relative;
+}
+
+.section-7 .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai input:first-child{
+    padding: 8px;
+    outline: none;
+    font-size: .6rem;
+    font-family: var(--popins);
+}
+.section-7 .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai input:nth-child(2){
+    padding: 8px;
+    outline: none;
+    font-size: .6rem;
+    font-family: var(--popins);
+}
