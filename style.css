@@ -5,6 +5,7 @@
     --orange: #fd7600;
     --popins:"Poppins", sans-serif;
     --lato:"Lato", sans-serif;
+    --pacifico:"Pacifico", cursive;
 }
 
 * {
@@ -1494,7 +1495,7 @@ body {
 /* section 6 */
 .section-6 {
     width: 100%;
-    height: 95vh;
+    height: 110vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -1506,7 +1507,7 @@ body {
 
 .section-6 .content-1-section-6  {
     width: 100%;
-    height: 20%;
+    height: 15%;
     background-image: url("background-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -1990,11 +1991,16 @@ body {
     z-index: 3;
 }
 
+.section-6 .content-3-section-6 .prev svg:hover {
+    transform: scale(1.4);
+}
+
+
 .section-6 .content-3-section-6 .prev svg {
     width: 5%;
     padding: 20px;
     cursor: pointer;
-
+    transition: .3s;
 }
 
 /* next */
@@ -2007,32 +2013,38 @@ body {
     z-index: 3;
 }
 
+.section-6 .content-3-section-6 .next svg:hover {
+    transform: scale(1.4);
+}
+
 .section-6 .content-3-section-6 .next svg {
     width: 5%;
     padding: 20px;
     cursor: pointer;
+    transition: .3s;
 }
 
 .section-6 .content-3-section-6 .vol-2 .h-1-content-3-section-6,
 .section-6 .content-3-section-6 .vol-1 .h-1-content-3-section-6 {
-    color: white;
+    color: rgb(29, 28, 28);
     font-size: 5rem;
     font-family: var(--lato);
+    font-style: italic;
     transform: rotate(180deg);
     z-index: 1;
-    margin-top: -2%;
+    margin-top: -3%;
     
 }
 
 .section-6 .content-3-section-6 .vol-2 .a-1-content-3-section-6,
 .section-6 .content-3-section-6 .vol-1 .a-1-content-3-section-6 {
     z-index: 2;
-    color: rebeccapurple;
     font-family: var(--popins);
     font-size: .8rem;
     position: relative;
     margin-bottom: 1%;
     margin-top: -4%;
+    font-style: italic;
 }
 
 .section-6 .content-3-section-6 .vol-2 .a-1-content-3-section-6::before,
@@ -2043,16 +2055,18 @@ body {
     left: -40%;
     font-size: .8rem;
     top: -5%;
+    font-style: italic;
 }
 
 .section-6 .content-3-section-6 .vol-2 .p-1-content-3-section-6,
 .section-6 .content-3-section-6 .vol-1 .p-1-content-3-section-6 {
-    width: 70%;
+    width: 60%;
     text-align: center;
     line-height: 170%;
     margin-bottom: .5%;
     font-size: .8rem;
     font-family: var(--popins);
+    font-style: italic;
 }
 
 .section-6 .content-3-section-6 .vol-2 .a-2-content-3-section-6,
@@ -2060,13 +2074,15 @@ body {
     font-size: .8rem;
     margin-bottom: .3%;
     font-family: var(--popins);
+    font-style: italic;
 }
 
 .section-6 .content-3-section-6 .vol-2 .a-3-content-3-section-6,
 .section-6 .content-3-section-6 .vol-1 .a-3-content-3-section-6 {
     font-size: .8rem;
-    margin-bottom: .5%;
+    margin-bottom: 2%;
     font-family: var(--popins);
+    font-style: italic;
 }
 
 .section-6 .content-3-section-6 .vol-2 .p-2-content-3-section-6,
@@ -2079,15 +2095,48 @@ body {
 /* section 7 */
 .section-7 {
     width: 100%;
-    height: 140vh;
+    height: 160vh;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+.section-7 form {
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* title */
+.section-7 form .title-section-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: rgb(29, 28, 28);
+    margin-top: -8%;
+    z-index: 2;
+}
+
+.section-7 form .title-section-7 h3 {
+    font-size: 1.8rem;
+    font-family: var(--pacifico);
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
 /* bingkai luar */
-.section-7 .content-1-section-7 {
+.section-7 form .content-1-section-7 {
     width: 40rem;
     height: 40rem;
     background-image: url("bingkai-3.png");
@@ -2100,7 +2149,7 @@ body {
     border-radius: 50%;
 }
 /* bingkai dalam */
-.section-7 .content-1-section-7 .bingkai {
+.section-7 form .content-1-section-7 .bingkai {
     width: 27rem;
     height: 27rem;
     background-color: white;
@@ -2114,7 +2163,7 @@ body {
     overflow: hidden;
 }
 
-.section-7 .content-1-section-7 .bingkai::before {
+.section-7 form .content-1-section-7 .bingkai::before {
     content: " ";
     position: absolute;
     width: 100%;
@@ -2127,13 +2176,14 @@ body {
     z-index: 1;
 }
 
-.section-7 .content-1-section-7 .bingkai .h2-1-bingkai {
+.section-7 form .content-1-section-7 .bingkai .h2-1-bingkai {
     font-size: .9rem;
     font-family: var(--popins);
     z-index: 2;
+    margin-top: -3%;
 }
 
-.section-7 .content-1-section-7 .bingkai .p-1-bingkai {
+.section-7 form .content-1-section-7 .bingkai .p-1-bingkai {
     font-size: .8rem;
     font-family: var(--latin);
     font-style: italic;
@@ -2141,7 +2191,7 @@ body {
     z-index: 2;
 }
 
-.section-7 .content-1-section-7 .bingkai .nama-bingkai {
+.section-7 form .content-1-section-7 .bingkai .nama-bingkai {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2151,7 +2201,7 @@ body {
     z-index: 2;
 }
 
-.section-7 .content-1-section-7 .bingkai .nama-bingkai::before {
+.section-7 form .content-1-section-7 .bingkai .nama-bingkai::before {
     content: " ";
     position: absolute;
     width: 145%;
@@ -2161,7 +2211,7 @@ body {
     opacity: .4;
 }
 
-.section-7 .content-1-section-7 .bingkai .nama-bingkai::after {
+.section-7 form .content-1-section-7 .bingkai .nama-bingkai::after {
     content: " ";
     position: absolute;
     width: 145%;
@@ -2171,17 +2221,16 @@ body {
     opacity: .4;
 }
 
-.section-7 .content-1-section-7 .bingkai .nama-bingkai .nama-1 {
+.section-7 form .content-1-section-7 .bingkai .nama-bingkai .nama-1 {
     font-family: var(--latin);
     font-size: 2rem;
     font-style: italic;
     letter-spacing: 5px;
     z-index: 2;
+    padding-right: 10%;
 }
 
-.section-7 .content-1-section-7 .bingkai .nama-bingkai .dan-bingkai {
-    margin-right: 10%;
-    margin-left: 10%;
+.section-7 form .content-1-section-7 .bingkai .nama-bingkai .dan-bingkai {
     padding: 9px;
     padding-left: 15px;
     padding-right: 15px;
@@ -2194,29 +2243,133 @@ body {
     z-index: 2;
 }
 
-.section-7 .content-1-section-7 .bingkai .nama-bingkai .nama-2 {
+.section-7 form .content-1-section-7 .bingkai .nama-bingkai .nama-2 {
     font-family: var(--latin);
     font-size: 2rem;
     font-style: italic;
     letter-spacing: 5px;
+    padding-left: 10%;
 }
 
-/* input */
+/* input 1*/
 
-.section-7 .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai {
+.section-7 form .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai {
     z-index: 2;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.section-7 .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai input:first-child{
+.section-7 form .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai input:first-child{
     padding: 8px;
     outline: none;
     font-size: .6rem;
+    font-family: var(--popins);
+    margin-right: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.section-7 form .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai input:nth-child(2){
+    padding: 8px;
+    outline: none;
+    font-size: .6rem;
+    font-family: var(--popins);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+/* input 2 */
+
+.section-7 form .content-1-section-7 .bingkai .input-2-bingkai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.section-7 form .content-1-section-7 .bingkai .input-2-bingkai label {
+    font-size: .7rem;
+    font-family: var(--popins);
+    font-weight: 500;
+}
+
+
+.section-7 form .content-1-section-7 .bingkai .input-2-bingkai input {
+    outline: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.section-7 form .content-1-section-7 .bingkai .footer-bingkai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.section-7 form .content-1-section-7 .bingkai .footer-bingkai h4 {
+    font-family: var(--popins);
+    font-weight: 600;
+}
+
+.section-7 form .content-1-section-7 .bingkai .footer-bingkai .teks-bingkai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.section-7 form .content-1-section-7 .bingkai .footer-bingkai .teks-bingkai p {
+    font-size: .6rem;
+    margin-right: 3%;
+    margin-left: 3%;
     font-family: var(--popins);
 }
-.section-7 .content-1-section-7 .bingkai .forum-bingkai .input-1-bingkai input:nth-child(2){
-    padding: 8px;
+
+.section-7 form .content-1-section-7 .bingkai .footer-bingkai .teks-bingkai svg {
+    width: 2%;
+}
+
+.section-7 form .content-2-section-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-7 form .content-2-section-7 textarea {
+    padding: .7rem;
+    font-family: var(--dm-sans);
     outline: none;
-    font-size: .6rem;
+    margin-bottom: 10%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.section-7 form .content-2-section-7 button {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 3%;
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    border-radius: 100px;
+    background-color: rgb(29, 28, 28);
+    color: white;
+    font-size: .7rem;
+    letter-spacing: 1px;
     font-family: var(--popins);
+    font-weight: bold;
+    transition: .3s;
+}
+
+.section-7 form .content-2-section-7 button:hover {
+    cursor: pointer;
+    transform: scale(.8);
 }
